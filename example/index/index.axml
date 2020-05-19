@@ -1,0 +1,4 @@
+<view style="height: 50px;"></view>
+<button size="default" type="primary" onTap="initCanvas">Button</button>
+<button size="default" type="primary" onTap="test">Test</button>
+<canvas id="webgl" type="webgl" style="width: 100%; height: 450px;"></canvas>
