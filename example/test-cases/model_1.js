@@ -1,6 +1,6 @@
 import { registerGLTFLoader } from "../loaders/gltf-loader";
 
-export function renderModel(canvas, THREE) {
+export function renderModel1(canvas, THREE) {
   registerGLTFLoader(THREE);
 
   var container,
@@ -49,8 +49,9 @@ export function renderModel(canvas, THREE) {
     // model
     var loader = new THREE.GLTFLoader();
     loader.load(
-      "image/RobotExpressive.glb",
-      // "https://dtmall-tel.alicdn.com/edgeComputingConfig/upload_models/1591673169101/RobotExpressive.glb",
+      // "image/RobotExpressive.glb",
+      // 请使用alicdn域名存放模型；
+      "https://dtmall-tel.alicdn.com/edgeComputingConfig/upload_models/1591673169101/RobotExpressive.glb",
       function (gltf) {
         model = gltf.scene;
         scene.add(model);
