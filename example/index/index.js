@@ -27,9 +27,11 @@ Page({
   },
 
   loadLocalModel() {
-    my.createCanvas({
+    try{
+my.createCanvas({
       id: "webgl",
       success: (canvas) => {
+        console.log(canvas)
         const THREE = createScopedThreejs(canvas);
 
         // renderSphere(canvas, THREE)
@@ -38,5 +40,11 @@ Page({
         renderModel(canvas, THREE);
       },
     });
+    }catch(e){
+      my.alert({
+        content:e.message
+      })
+    }
+    
   },
 });

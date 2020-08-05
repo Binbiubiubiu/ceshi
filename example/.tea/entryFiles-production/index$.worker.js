@@ -27,7 +27,7 @@ var n="\\x"+("0"+"~".charCodeAt(0).toString(16)).slice(-2),o="\\"+n,r=new RegExp
 const __BUGME_END__ = 1;
 /*BUGME_END*/if(!self.__appxInited) {
 self.__appxInited = 1;
-
+require('@alipay/appx-compiler/lib/sjsEnvInit');
 
 require('./config$');
 require('./importScripts$');
@@ -50,7 +50,7 @@ if(AFAppX.registerApp) {
   });
 }
 
-
+if(AFAppX.compilerConfig){ AFAppX.compilerConfig.component2 = true; }
 
 function success() {
 require('../../app');

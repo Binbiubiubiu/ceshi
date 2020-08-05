@@ -49,8 +49,8 @@ export function renderModel(canvas, THREE) {
     // model
     var loader = new THREE.GLTFLoader();
     loader.load(
-      "image/RobotExpressive.glb",
-      // "https://dtmall-tel.alicdn.com/edgeComputingConfig/upload_models/1591673169101/RobotExpressive.glb",
+      // "image/RobotExpressive.glb",
+      "https://dtmall-tel.alicdn.com/edgeComputingConfig/upload_models/1591673169101/RobotExpressive.glb",
       function (gltf) {
         model = gltf.scene;
         scene.add(model);

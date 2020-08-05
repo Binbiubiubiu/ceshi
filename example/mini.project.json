@@ -3,7 +3,9 @@
   "packOptions": {
     "ignore": []
   },
-  "include": ["**/**.glb"],
+  "include": [
+    "**/**.glb"
+  ],
   "setting": {
     "urlCheck": false,
     "es6": true,
@@ -20,5 +22,6 @@
       "disablePlugins": [],
       "outputPath": ""
     }
-  }
+  },
+  "component2": true
 }

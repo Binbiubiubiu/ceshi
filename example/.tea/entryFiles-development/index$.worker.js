@@ -1,6 +1,6 @@
 if(!self.__appxInited) {
 self.__appxInited = 1;
-
+require('@alipay/appx-compiler/lib/sjsEnvInit');
 
 require('./config$');
 
@@ -25,7 +25,7 @@ if(AFAppX.registerApp) {
   });
 }
 
-
+if(AFAppX.compilerConfig){ AFAppX.compilerConfig.component2 = true; }
 
 function success() {
 require('../../app');
